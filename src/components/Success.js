@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
-import RaisedButton from 'material-ui/RaisedButton';
 
 export class Success extends Component {
   continue = (e) => {
@@ -31,28 +30,10 @@ export class Success extends Component {
             <span style={{ color: 'red' }}> {email} </span>
             with further instructions
           </p>
-          {/* <RaisedButton
-            label="Confirm & Continue"
-            primary={true}
-            style={styles.button}
-            onClick={this.continue}
-          />
-          <RaisedButton
-            label="Back"
-            secondary={true}
-            style={styles.button}
-            onClick={this.back}
-          /> */}
         </React.Fragment>
       </MuiThemeProvider>
     );
   }
 }
-
-// const styles = {
-//   button: {
-//     margin: 15,
-//   },
-// };
 
 export default Success;
